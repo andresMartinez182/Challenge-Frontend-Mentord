@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("./img/bg-pattern-top.svg"),
+  url("./img/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 48vw bottom 50vh,
+  left 50vw top 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 420px;
+  width: 370px;
+  height: 420px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #f1f1f1;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.container .box-1 {
+  width: 100%;
+  height: 130px;
+  background-image: url("./img/bg-pattern-card.svg");
+  background-size: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.container .card-profile {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  padding: 5px;
+  margin: -45px auto 30px;
+}
+
+.container .card-content {
+  background-color: #f1f1f1;
+}
+
+.container .card-profile img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+.card-content h1, h2 {
+  color: hsl(229, 23%, 23%);
+}
+.card-content .name {
+  font-size: 1.4rem;
+  line-height: 45px;
+}
+
+.card-content .age, .country, p {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.card-content .activity {
+  border-top: 1px solid hsl(0, 0%, 80%);
+  height: 100px;
+  margin-top: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.card-content .activity h2 {
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+
+.card-content .activity p {
+  font-size: 0.8rem;
+}
